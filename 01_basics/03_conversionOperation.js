@@ -44,6 +44,18 @@ let valueInNumber4 = Number(score4);
 let score5 = undefined;
 let valueInNumber5 = Number(score5);
 
-console.log(typeof score5);
-console.log(typeof valueInNumber5);
-console.log(valueInNumber5);
+// console.log(typeof score5);
+// console.log(typeof valueInNumber5);
+// console.log(valueInNumber5);
+
+
+
+// ****************Operations***************
+
+// console.log("1"+ 2+2); // output: 122
+// console.log(1+2+"2"); //output: 32
+
+// console.log(true+); // output: error
+console.log(+true); // output: 1
+console.log(+""); // output: 0
+
