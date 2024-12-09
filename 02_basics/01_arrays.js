@@ -19,15 +19,25 @@ const newArr = arr.join();
 // console.log(typeof newArr);
 
 const myArr = ['a','b','c','d','e','f'];
-console.log("A", myArr);
+// console.log("A", myArr);
 
 // slice : no change in original array
 const mySlice = myArr.slice(1,3);
-console.log("B", myArr); // [ 'a', 'b', 'c', 'd', 'e', 'f' ]
-console.log("BB", mySlice); // ['b', 'c']
+// console.log("B", myArr); // [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+// console.log("BB", mySlice); // ['b', 'c']
 
 // splice : changes the original array as well
 const mySplice = myArr.splice(1,3); 
-console.log("C", myArr); // [ 'a', 'e', 'f' ]
-console.log("CC", mySplice); //[ 'b', 'c', 'd' ]
+// console.log("C", myArr); // [ 'a', 'e', 'f' ]
+// console.log("CC", mySplice); //[ 'b', 'c', 'd' ]
 
+// --------------------------------------------------------------------
+
+const heros = ['ironman', 'spiderman'];
+const dc_heros = ['flash', 'batman'];
+
+const concated_heros = heros.concat(dc_heros);
+console.log(concated_heros);
+
+const new_heros = [...heros, ...dc_heros];
+console.log(new_heros);
