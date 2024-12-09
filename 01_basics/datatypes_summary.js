@@ -37,7 +37,45 @@ const myFunc = function(){
     
 }
 
-console.log(typeof arr);
-console.log(typeof obj);
-console.log(typeof myFunc); // its output is function, which is also a type of object(basically object function)
+// console.log(typeof arr);
+// console.log(typeof obj);
+// console.log(typeof myFunc); // its output is function, which is also a type of object(basically object function)
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//Memory
+
+
+/*
+Memory: Stack (Primitive) and Heap (Non-Primitive)
+
+Stack - creates Copy, plz refer score example below
+Heap - creates Reference, plz refer below userOne and userTwo example
+
+*/
+let score = 33;
+
+let anotherScore = score;
+console.log(score);
+console.log(anotherScore);
+
+anotherScore = 100;
+console.log(score);
+console.log(anotherScore);
+
+
+let userOne = {
+    uname: 'Deeksha',
+    uage: 29
+};
+
+let userTwo = userOne;
+console.log(userTwo.uname);
+console.log(userOne.uname);
+
+//Changes made in userTwo object
+userTwo.uname = "Deeksha Chaturvedi"
+console.log(userTwo.uname);
+console.log(userOne.uname);
 
